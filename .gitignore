@@ -1,4 +1,1 @@
-# Config
-config/*
-!config/.config/chromium/Default/Extensions
 .jenkins-external
