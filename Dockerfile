@@ -24,3 +24,4 @@ COPY /root /
 EXPOSE 3000
 
 VOLUME /config
+COPY config /config/.config
