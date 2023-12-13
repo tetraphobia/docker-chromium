@@ -1,4 +1,4 @@
 # Config
-config
-!config/.config
+config/*
+!config/.config/chromium/Default/Extensions
 .jenkins-external
