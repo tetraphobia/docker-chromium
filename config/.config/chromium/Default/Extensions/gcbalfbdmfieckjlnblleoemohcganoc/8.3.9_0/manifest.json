@@ -1,0 +1,37 @@
+{
+   "action": {
+      "default_icon": {
+         "38": "logo38.png"
+      }
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "content_script.js" ],
+      "match_about_blank": true,
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_description__",
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "128": "logo128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAx0JRufkmCKrHAL37dWmu4gQT9xh9/AktNTdCSNoLxmzPVdvOfhjbcocQ7veb5inYE9hprJ/vcsWOrjAO9xvTXk+zUZQRNoUtamCnCqbGwuKD98OMDb9S5/QoK4/ThniS4e1RuL3K12wydJ/GUGOMX+TF3GtDODYmzIJIGDXOmcTy821sr9tsDUN0LQDa/8MK29rtGUmXleWt/gPgwhpIAb1k0ATCOk1P3QbnybRuRTAfFvAz5hTKLJ0A6755gGYo7qjFQHK8EUloo7bQ5ufvRqSnfLcziOHUkQthlgIUu4MDAPBNLQ7jMWuOT40yaJ3H5ftrkPv1gCobWmFdDMYGKQIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_name__",
+   "offline_enabled": true,
+   "options_page": "options.html",
+   "permissions": [ "bookmarks", "clipboardRead", "clipboardWrite", "cookies", "debugger", "downloads", "notifications", "storage", "tabs", "proxy", "nativeMessaging", "contextMenus", "webRequest", "webRequestAuthProvider" ],
+   "short_name": "__MSG_short_name__",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "8.3.9",
+   "web_accessible_resources": [ {
+      "extension_ids": [  ],
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "content_script.js", "inject.js", "logo.png" ]
+   } ]
+}

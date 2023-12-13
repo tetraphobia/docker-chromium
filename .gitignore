@@ -1,1 +1,12 @@
 .jenkins-external
+
+# Config
+config/*
+!config/.config/
+config/.config/*
+!config/.config/chromium/
+config/.config/chromium/*
+!config/.config/chromium/Default
+config/.config/chromium/Default/*
+!config/.config/chromium/Default/Extensions/
+!config/.config/chromium/Default/Extensions/*
