@@ -1,16 +1,14 @@
 version: "2.1"
 services:
   chromium:
-    image: lscr.io/linuxserver/chromium:latest
+    build: .
     container_name: chromium
     security_opt:
       - seccomp:unconfined #optional
     environment:
       - PUID=1000
       - PGID=1000
-      - CHROME_CLI=https://www.linuxserver.io/ #optional
-    volumes:
-      - ./config:/config
+      - CHROME_CLI=--load-extension=/uiv https://google.com
     ports:
       - 3000:3000
       - 3001:3001
